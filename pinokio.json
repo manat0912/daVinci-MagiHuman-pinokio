@@ -1,0 +1,19 @@
+{
+  "title": "daVinci-MagiHuman-pinokio",
+  "description": "",
+  "icon": "icon.png",
+  "links": [
+    {
+      "title": "github",
+      "value": "https://github.com/GAIR-NLP"
+    },
+    {
+      "title": "website",
+      "value": "https://github.com/GAIR-NLP/daVinci-MagiHuman.git"
+    }
+  ],
+  "posts": [],
+  "plugin": {
+    "menu": []
+  }
+}

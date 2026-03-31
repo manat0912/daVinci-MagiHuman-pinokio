@@ -1,0 +1,52 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && uv pip install -e MagiAttention
+Using Python 3.12.12 environment at: env
+  x Failed to build `magi-attention @ file:///C:/pinokio/api/daVinci-MagiHuman/app/MagiAttention`                                                                                                                                                         
+  |-> The build backend returned an error
+  `-> Call to `setuptools.build_meta.build_editable` failed (exit code: 1)
+
+      [stdout]
+
+      torch.__version__='2.10.0+cpu'
+
+
+      [stderr]
+      C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp9pftfz\Lib\site-packages\torch\_subclasses\functional_tensor.py:283: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at
+      C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\utils\tensor_numpy.cpp:84.)
+        cpu = _conversion_method_template(device=torch.device("cpu"))
+      C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp9pftfz\Lib\site-packages\wheel\bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please
+      update to setuptools v70.1 or later which contains an integrated version of this command.
+        warn(
+      <string>:198: UserWarning: magi_attention was requested, but nvcc was not found.  Are you sure your environment has nvcc available?  If you're installing within a container from https://hub.docker.com/r/pytorch/pytorch, only images whose
+      names contain 'devel' will provide nvcc.
+      Traceback (most recent call last):
+        File "<string>", line 14, in <module>
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp9pftfz\Lib\site-packages\setuptools\build_meta.py", line 481, in get_requires_for_build_editable
+return self.get_requires_for_build_wheel(config_settings)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp9pftfz\Lib\site-packages\setuptools\build_meta.py", line 333, in get_requires_for_build_wheel
+return self._get_build_requires(config_settings, requirements=[])
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp9pftfz\Lib\site-packages\setuptools\build_meta.py", line 301, in _get_build_requires
+self.run_setup()
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp9pftfz\Lib\site-packages\setuptools\build_meta.py", line 317, in run_setup
+exec(code, locals())
+        File "<string>", line 742, in <module>
+        File "<string>", line 264, in build_ffa_utils_ext_module
+        File "<string>", line 136, in maybe_make_magi_cuda_extension
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp9pftfz\Lib\site-packages\torch\utils\cpp_extension.py", line 1408, in CUDAExtension
+library_dirs += library_paths(device_type="cuda")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp9pftfz\Lib\site-packages\torch\utils\cpp_extension.py", line 1641, in library_paths
+paths.append(_join_cuda_home(lib_dir))
+^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp9pftfz\Lib\site-packages\torch\utils\cpp_extension.py", line 3102, in _join_cuda_home
+raise OSError('CUDA_HOME environment variable is not set. '
+      OSError: CUDA_HOME environment variable is not set. Please set it to your CUDA install root.
+
+      hint: This usually indicates a problem with the package or the build environment.
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

@@ -1,0 +1,15 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && uv pip install https://huggingface.co/cocktailpeanut/wheels/resolve/main/flash_attn-2.8.2%2Bcu128torch2.7-cp310-cp310-win_amd64.whl
+Using Python 3.10.15 environment at: env
+Resolved 11 packages in 10ms
+Installed 5 packages in 1.04s
+ + einops==0.8.2
+ + flash-attn==2.8.2+cu128torch2.7 (from https://huggingface.co/cocktailpeanut/wheels/resolve/main/flash_attn-2.8.2%2Bcu128torch2.7-cp310-cp310-win_amd64.whl)
+ + mpmath==1.3.0
+ + networkx==3.4.2
+ + sympy==1.14.0
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

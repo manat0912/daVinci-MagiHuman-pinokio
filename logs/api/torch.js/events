@@ -1,0 +1,36 @@
+2026-03-30T09:03:31.439Z [memory] {"ts":1774861411439,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42006}
+2026-03-30T09:03:31.439Z [memory] 
+2026-03-30T09:03:31.439Z [memory] {"ts":1774861411439,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42006}
+2026-03-30T09:03:31.439Z [memory] 
+2026-03-30T09:09:06.581Z [memory] {"ts":1774861746580,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42006}
+2026-03-30T09:09:06.581Z [memory] 
+2026-03-30T09:09:06.581Z [memory] {"ts":1774861746580,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42006}
+2026-03-30T09:09:06.581Z [memory] 
+2026-03-31T04:46:15.560Z [memory] {"ts":1774932375559,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42009}
+2026-03-31T04:46:15.560Z [memory] 
+2026-03-31T04:46:15.560Z [memory] {"ts":1774932375559,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42009}
+2026-03-31T04:46:15.560Z [memory] 
+2026-03-31T07:51:20.615Z [memory] {"ts":1774943480614,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T07:51:20.615Z [memory] 
+2026-03-31T07:51:20.615Z [memory] {"ts":1774943480614,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T07:51:20.615Z [memory] 
+2026-03-31T07:53:19.433Z [memory] {"ts":1774943599432,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T07:53:19.433Z [memory] 
+2026-03-31T07:53:19.432Z [memory] {"ts":1774943599432,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T07:53:19.432Z [memory] 
+2026-03-31T08:06:29.201Z [memory] {"ts":1774944389201,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T08:06:29.201Z [memory] 
+2026-03-31T08:06:29.201Z [memory] {"ts":1774944389201,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T08:06:29.201Z [memory] 
+2026-03-31T08:08:22.435Z [memory] {"ts":1774944502435,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T08:08:22.435Z [memory] 
+2026-03-31T08:08:22.435Z [memory] {"ts":1774944502435,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T08:08:22.435Z [memory] 
+2026-03-31T08:14:37.593Z [memory] {"ts":1774944877592,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T08:14:37.593Z [memory] 
+2026-03-31T08:14:37.593Z [memory] {"ts":1774944877592,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42004}
+2026-03-31T08:14:37.593Z [memory] 
+2026-03-31T08:38:28.201Z [memory] {"ts":1774946308200,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42016}
+2026-03-31T08:38:28.201Z [memory] 
+2026-03-31T08:38:28.201Z [memory] {"ts":1774946308200,"step":0,"input":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"args":{"venv":"env","path":"app","flashattention":true,"xformers":true,"triton":true,"sageattention":true},"global":{},"local":{},"port":42016}
+2026-03-31T08:38:28.201Z [memory] 

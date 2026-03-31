@@ -1,0 +1,11 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && uv pip install torchao==0.10.0
+Using Python 3.12.12 environment at: env
+Resolved 1 package in 94ms
+Installed 1 package in 107ms
+ + torchao==0.10.0
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

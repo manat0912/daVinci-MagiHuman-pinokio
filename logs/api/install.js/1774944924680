@@ -1,0 +1,553 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && if exist MagiAttention rmdir /s /q MagiAttention & git clone -n https://github.com/SandAI-org/MagiAttention.git && cd MagiAttention && git config core.protectNTFS false && git reset HEAD && git rm --cached -r assets && git checkout . && git submodule update --init --recursive && cd ..
+Cloning into 'MagiAttention'...
+remote: Enumerating objects: 12817, done.
+remote: Counting objects: 100% (2732/2732), done.
+remote: Compressing objects: 100% (1008/1008), done.
+remote: Total 12817 (delta 2212), reused 1726 (delta 1724), pack-reused 10085 (from 2)
+Receiving objects: 100% (12817/12817), 161.37 MiB | 17.30 MiB/s, done.
+Resolving deltas: 100% (8076/8076), done.
+Unstaged changes after reset:
+D.clang-format
+D.coveragerc
+D.flake8
+D.github/scripts/install_requirements.sh
+D.github/workflows/build_test.yaml
+D.github/workflows/lint.yaml
+D.github/workflows/sphinx.yaml
+D.gitignore
+D.gitmodules
+D.pre-commit-config.yaml
+DCONTRIBUTING.md
+DLICENSE
+DMANIFEST.in
+DREADME.md
+Dassets/magi_attn/comm/group_gather_reduce_all2allv.png
+Dassets/magi_attn/comm/ring_p2p_redundancy.png
+Dassets/magi_attn/comp/min_hp_alg.png
+Dassets/magi_attn/comp/ring_attn_load_balance.png
+Dassets/magi_attn/exp/distributed/b200/causal_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/distributed/b200/causal_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/distributed/b200/full_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/distributed/b200/full_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/distributed/b200/varlen_causal_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/distributed/b200/varlen_causal_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/distributed/b200/varlen_full_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/distributed/b200/varlen_full_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/distributed/h100/causal_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/distributed/h100/causal_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/distributed/h100/full_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/distributed/h100/full_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/distributed/h100/varlen_causal_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/distributed/h100/varlen_causal_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/distributed/h100/varlen_full_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/distributed/h100/varlen_full_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/causal_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/causal_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/full_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/full_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/sw_causal_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/sw_causal_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/varlen_block_causal_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/varlen_block_causal_mask/fwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/varlen_causal_mask/bwd/flops_report.png
+Dassets/magi_attn/exp/kernel/b200/varlen_causal_mask/fwd/flops_report.png
+D       assets/magi_attn/exp/kernel/b200/varlen_full_mask/bwd/flops_report.png
+D       assets/magi_attn/exp/kernel/b200/varlen_full_mask/fwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/causal_mask/bwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/causal_mask/fwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/full_mask/bwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/full_mask/fwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/sw_causal_mask/bwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/sw_causal_mask/fwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/varlen_block_causal_mask/bwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/varlen_block_causal_mask/fwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/varlen_causal_mask/bwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/varlen_causal_mask/fwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/varlen_full_mask/bwd/flops_report.png
+D       assets/magi_attn/exp/kernel/h100/varlen_full_mask/fwd/flops_report.png
+D       assets/magi_attn/exp/varlen_seqlen_distribution.png
+D       assets/magi_attn/ffa/attn_slice_mask_type_sq<sk.png
+D       assets/magi_attn/ffa/attn_slice_mask_type_sq=sk.png
+D       assets/magi_attn/ffa/attn_slice_mask_type_sq>sk.png
+D       assets/magi_attn/ffa/attnslice_interpret.png
+D       assets/magi_attn/ffa/ffa_slice_atomic_reduce.png
+D       assets/magi_attn/ffa/hstu_func_vs_attn_slice.png
+D       assets/magi_attn/ffa/mask_with_attn_slice.png
+D       assets/magi_attn/ffa/muon_qk_clip_max_logits.png
+D       assets/magi_attn/ffa/sw_mask_with_slice.png
+D       assets/magi_attn/mso/dynamic_mso_alg.png
+D       assets/magi_attn/mso/multi_stage_overlap_fwd_bwd.png
+D       assets/magi_attn/overview/magiattn_overview_v1.0.0.png
+D       assets/magi_attn/overview/magiattn_overview_v1.1.0.png
+D       assets/sandai_logos/logo-black.png
+D       assets/sandai_logos/logo-gold.png
+D       assets/sandai_logos/logo-white.png
+D       conftest.py
+D       docs/Makefile
+D       docs/README.md
+D       docs/make.bat
+D       docs/requirements.txt
+D       docs/source/_static/custom.css
+D       docs/source/blog/attn_engine.md
+D       docs/source/blog/attn_sink.md
+D       docs/source/blog/blackwell_ffa_fa4.md
+D       docs/source/blog/cp_benchmark.md
+D       docs/source/blog/dist_native.md
+D       docs/source/blog/dynamic_solver.md
+D       docs/source/blog/fa2_math_derivation.md
+D       docs/source/blog/jit_compile.md
+D       docs/source/blog/kernel_overlap.md
+D       docs/source/blog/magi_attn.md
+D       docs/source/blog/muon_qk_clip.md
+D       docs/source/blog/native_grpcoll.md
+D       docs/source/blog/refs/attn_engine.bib
+D       docs/source/blog/refs/attn_sink.bib
+D       docs/source/blog/refs/blackwell_ffa_fa4.bib
+D       docs/source/blog/refs/cp_benchmark.bib
+D       docs/source/blog/refs/dist_native.bib
+D       docs/source/blog/refs/dynamic_solver.bib
+D       docs/source/blog/refs/fa2_math_derivation.bib
+D       docs/source/blog/refs/jit_compile.bib
+D       docs/source/blog/refs/kernel_overlap.bib
+D       docs/source/blog/refs/magi_attn.bib
+D       docs/source/blog/refs/muon_qk_clip.bib
+D       docs/source/blog/refs/native_grpcoll.bib
+D       docs/source/blog/refs/sparse_attn.bib
+D       docs/source/blog/sparse_attn.md
+D       docs/source/blog/toc.md
+D       docs/source/conf.py
+D       docs/source/index.md
+D       docs/source/user_guide/env_variables.md
+D       docs/source/user_guide/install.md
+D       docs/source/user_guide/magi_api.md
+D       docs/source/user_guide/quickstart.md
+D       docs/source/user_guide/toc.md
+D       examples/megatron/README.md
+D       examples/megatron/results.png
+D       examples/torch_native/README.md
+D       examples/torch_native/configuration_llama.py
+D       examples/torch_native/llama_pretrain_config.py
+D       examples/torch_native/main.py
+D       examples/torch_native/modeling_llama.py
+D       examples/torch_native/run.sh
+D       examples/transformers/README.md
+D       examples/transformers/magi_attention_func.py
+D       examples/transformers/magi_trainer.py
+D       examples/transformers/result.png
+D       examples/transformers/run_magi_clm.py
+D       examples/transformers/run_magi_clm.sh
+D       examples/transformers/run_origin_clm.py
+D       examples/transformers/run_origin_clm.sh
+D       exps/.gitignore
+D       exps/README.md
+D       exps/__init__.py
+D       exps/attn/__init__.py
+D       exps/attn/baselines/__init__.py
+D       exps/attn/baselines/attn_impl.py
+D       exps/attn/baselines/block_sparse_attn_triton.py
+D       exps/attn/baselines/utils.py
+D       exps/attn/draw_benchmark.py
+D       exps/attn/merge_csv.py
+D       exps/attn/profile_ffa/README.md
+D       exps/attn/profile_ffa/__init__.py
+D       exps/attn/profile_ffa/compare_ffa_results.py
+D       exps/attn/profile_ffa/ffa_benchmark.py
+D       exps/attn/profile_ffa/profile_ffa.sh
+D       exps/attn/profile_ffa/run_branch_profile.sh
+D       exps/attn/requirements.txt
+D       exps/attn/run_benchmark.py
+D       exps/attn/run_benchmark.sh
+D       exps/attn/run_blackwell_benchmark.py
+D       exps/attn/run_blackwell_benchmark.sh
+D       exps/attn/run_block_sparse_bench.sh
+D       exps/attn/run_block_sparse_benchmark.py
+D       exps/attn/run_max_logits_benchmark.py
+D       exps/attn/run_packgqa_bench.py
+D       exps/attn/run_packgqa_swapab_bench.py
+D       exps/attn/run_sparse_load_block_sparse_benchmark.py
+D       exps/attn/run_sparse_load_dense_benchmark.py
+D       exps/attn/run_sparse_load_pack_gqa_benchmark.py
+D       exps/attn/run_swapab_benchmark.py
+D       exps/attn/run_swapbwdqkloop_benchmark.py
+D       exps/attn/run_var_block_sparse_benchmark.py
+D       exps/attn/tests/__init__.py
+D       exps/device_a2av/__init__.py
+D       exps/device_a2av/run.sh
+D       exps/device_a2av/test.py
+D       exps/dist_attn/Dockerfile.benchmark
+D       exps/dist_attn/__init__.py
+D       exps/dist_attn/baselines/__init__.py
+D       exps/dist_attn/baselines/hybrid_dcp.py
+D       exps/dist_attn/baselines/interface.py
+D       exps/dist_attn/baselines/loongtrain.py
+D       exps/dist_attn/baselines/nsa.py
+D       exps/dist_attn/baselines/ring_attn.py
+D       exps/dist_attn/baselines/shard.py
+D       exps/dist_attn/baselines/ulysess.py
+D       exps/dist_attn/baselines/usp.py
+D       exps/dist_attn/baselines/usp_nsa.py
+D       exps/dist_attn/baselines/utils_cp.py
+D       exps/dist_attn/benchmark/__init__.py
+D       exps/dist_attn/benchmark/datasets/default/doc_length_distribution.csv
+D       exps/dist_attn/benchmark/enums.py
+D       exps/dist_attn/benchmark/mask.py
+D       exps/dist_attn/benchmark/metric.py
+D       exps/dist_attn/benchmark/utils.py
+D       exps/dist_attn/benchmark_conf.py
+D       exps/dist_attn/build_benchmark_docker.sh
+D       exps/dist_attn/dyn_simulate/test_solver.py
+D       exps/dist_attn/main.py
+D       exps/dist_attn/merge_draw_csv.py
+D       exps/dist_attn/requirements.txt
+D       exps/dist_attn/run_benchmark.py
+D       exps/dist_attn/run_benchmark.sh
+D       exps/dist_attn/tests/__init__.py
+D       exps/dist_attn/tests/attn_profile.py
+D       exps/dist_attn/tests/attn_profile.sh
+D       exps/dist_attn/tests/nsa_profile.py
+D       exps/dist_attn/tests/test_baseline_attn.py
+D       exps/dist_attn/tests/test_usp_nsa.py
+D       exps/dist_attn/tests/test_utils.py
+D       exps/grpcoll/__init__.py
+D       exps/grpcoll/grpcoll_utils.py
+D       exps/grpcoll/run_grpcoll_test.sh
+D       exps/grpcoll/test_internode_grpcoll.py
+D       exps/grpcoll/test_intranode_grpcoll.py
+D       exps/grpcoll/test_low_latency_grpcoll.py
+D       extensions/README.md
+D       extensions/__init__.py
+D       extensions/magi_attn_extensions/__init__.py
+D       extensions/magi_attn_extensions/dsa_interface.py
+D       extensions/magi_attn_extensions/fa2_interface_with_sink.py
+D       extensions/magi_attn_extensions/fa3_interface_with_sink.py
+D       extensions/magi_attn_extensions/fa4_interface_with_sink.py
+D       extensions/requirements.txt
+D       extensions/setup.py
+D       extensions/tests/__init__.py
+D       extensions/tests/dsa_ref_attn.py
+D       extensions/tests/test_dsa_interface.py
+D       extensions/tests/test_fa_interface_with_sink.py
+D       magi_attention/__init__.py
+D       magi_attention/api/__init__.py
+D       magi_attention/api/functools.py
+D       magi_attention/api/magi_attn_interface.py
+D       magi_attention/benchmarking/__init__.py
+D       magi_attention/benchmarking/bench.py
+D       magi_attention/benchmarking/image_grid.py
+D       magi_attention/benchmarking/utils.py
+D       magi_attention/comm/__init__.py
+D       magi_attention/comm/functional/__init__.py
+D       magi_attention/comm/functional/_gather_scatter_v.py
+D       magi_attention/comm/primitive/__init__.py
+D       magi_attention/comm/primitive/_all2all_v.py
+D       magi_attention/comm/primitive/_all_gather_v.py
+D       magi_attention/comm/primitive/_scatter_v.py
+D       magi_attention/comm/primitive/device_a2av/__init__.py
+D       magi_attention/comm/primitive/device_a2av/interface.py
+D       magi_attention/comm/primitive/device_a2av/triton_barrier.py
+D       magi_attention/comm/primitive/device_a2av/triton_impl.py
+D       magi_attention/comm/primitive/device_a2av/triton_utils.py
+D       magi_attention/comm/primitive/grpcoll/__init__.py
+D       magi_attention/comm/primitive/grpcoll/_a2av_grpcoll_impl.py
+D       magi_attention/comm/primitive/grpcoll/_buffer.py
+D       magi_attention/comm/primitive/grpcoll/_config.py
+D       magi_attention/comm/primitive/grpcoll/_event.py
+D       magi_attention/comm/primitive/grpcoll/_group_collective.py
+D       magi_attention/comm/primitive/grpcoll/_group_collective_hier.py
+D       magi_attention/comm/primitive/grpcoll/_handle.py
+D       magi_attention/comm/primitive/grpcoll/_mgr.py
+D       magi_attention/comm/primitive/grpcoll/_native_grpcoll_impl.py
+D       magi_attention/comm/primitive/grpcoll/utils.py
+D       magi_attention/comm/work.py
+D       magi_attention/common/__init__.py
+D       magi_attention/common/enum.py
+D       magi_attention/common/forward_meta.py
+D       magi_attention/common/jit/__init__.py
+D       magi_attention/common/jit/core.py
+D       magi_attention/common/jit/cpp_ext.py
+D       magi_attention/common/jit/env.py
+D       magi_attention/common/jit/utils.py
+D       magi_attention/common/mask.py
+D       magi_attention/common/range.py
+D       magi_attention/common/range_op/__init__.py
+D       magi_attention/common/range_op/_range_fill.py
+D       magi_attention/common/range_op/_range_gather.py
+D       magi_attention/common/range_op/_range_reduce.py
+D       magi_attention/common/range_op/utils.py
+D       magi_attention/common/ranges.py
+D       magi_attention/common/rectangle.py
+D       magi_attention/common/rectangles.py
+D       magi_attention/config.py
+D       magi_attention/csrc/comm/grpcoll/buffer.cpp
+D       magi_attention/csrc/comm/grpcoll/buffer.hpp
+D       magi_attention/csrc/comm/grpcoll/config.hpp
+D       magi_attention/csrc/comm/grpcoll/event.hpp
+D       magi_attention/csrc/comm/grpcoll/generate_inst.py
+D       magi_attention/csrc/comm/grpcoll/kernels/api.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/buffer.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/configs.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/exception.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/ibgda_device.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/internode.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/internode_kernel.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/internode_ll.cu
+D       magi_attention/csrc/comm/grpcoll/kernels/internode_notify_kernel.cu
+D       magi_attention/csrc/comm/grpcoll/kernels/internode_notify_kernel.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/internode_utils.cu
+D       magi_attention/csrc/comm/grpcoll/kernels/internode_utils.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/intranode.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/intranode_kernel.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/intranode_notify_kernel.cu
+D       magi_attention/csrc/comm/grpcoll/kernels/intranode_notify_kernel.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/intranode_utils.cuh
+Dmagi_attention/csrc/comm/grpcoll/kernels/launch.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/layout.cu
+D       magi_attention/csrc/comm/grpcoll/kernels/reduce_op.cuh
+D       magi_attention/csrc/comm/grpcoll/kernels/runtime.cu
+D       magi_attention/csrc/comm/grpcoll/kernels/utils.cuh
+D       magi_attention/csrc/comm/grpcoll/meta.hpp
+D       magi_attention/csrc/common/cuda_check.h
+D       magi_attention/csrc/cutlass
+D       magi_attention/csrc/extensions/CMakeLists.txt
+D       magi_attention/csrc/extensions/attn_ranges.hpp
+D       magi_attention/csrc/extensions/dyn_solver_alg.cpp
+D       magi_attention/csrc/extensions/kernel_barrier.cu
+D       magi_attention/csrc/extensions/kernel_barrier.cuh
+D       magi_attention/csrc/extensions/magi_attn_ext.cpp
+D       magi_attention/csrc/extensions/magi_attn_ext.hpp
+D       magi_attention/csrc/extensions/rectangle.hpp
+D       magi_attention/csrc/extensions/rectangles.hpp
+D       magi_attention/csrc/flexible_flash_attention/block.h
+D       magi_attention/csrc/flexible_flash_attention/bwd_inst_template.jinja
+D       magi_attention/csrc/flexible_flash_attention/bwd_tile_scheduler.hpp
+D       magi_attention/csrc/flexible_flash_attention/copy_sm90_bulk_reduce.hpp
+D       magi_attention/csrc/flexible_flash_attention/epilogue_bwd.hpp
+D       magi_attention/csrc/flexible_flash_attention/epilogue_fwd.hpp
+D       magi_attention/csrc/flexible_flash_attention/flash.h
+D       magi_attention/csrc/flexible_flash_attention/flash_bwd_kernel_sm90.h
+D       magi_attention/csrc/flexible_flash_attention/flash_bwd_launch_template.h
+D       magi_attention/csrc/flexible_flash_attention/flash_bwd_postprocess.cu
+D       magi_attention/csrc/flexible_flash_attention/flash_bwd_postprocess_kernel.h
+D       magi_attention/csrc/flexible_flash_attention/flash_bwd_postprocess_launch_template.h
+D       magi_attention/csrc/flexible_flash_attention/flash_bwd_preprocess_kernel.h
+D       magi_attention/csrc/flexible_flash_attention/flash_fwd_kernel_sm90.h
+D       magi_attention/csrc/flexible_flash_attention/flash_fwd_launch_template.h
+D       magi_attention/csrc/flexible_flash_attention/flash_fwd_postprocess.cu
+D       magi_attention/csrc/flexible_flash_attention/flash_fwd_postprocess_kernel.h
+D       magi_attention/csrc/flexible_flash_attention/flash_fwd_postprocess_launch_template.h
+D       magi_attention/csrc/flexible_flash_attention/flex_flash_bwd.hpp
+D       magi_attention/csrc/flexible_flash_attention/flex_flash_common.cpp
+D       magi_attention/csrc/flexible_flash_attention/flex_flash_common.hpp
+D       magi_attention/csrc/flexible_flash_attention/flex_flash_fwd.hpp
+D       magi_attention/csrc/flexible_flash_attention/fwd_inst_template.jinja
+D       magi_attention/csrc/flexible_flash_attention/fwd_tile_scheduler.hpp
+D       magi_attention/csrc/flexible_flash_attention/mainloop_bwd_sm90_tma_gmma_ws.hpp
+D       magi_attention/csrc/flexible_flash_attention/mainloop_fwd_sm90_tma_gmma_ws.hpp
+D       magi_attention/csrc/flexible_flash_attention/mask.h
+D       magi_attention/csrc/flexible_flash_attention/named_barrier.hpp
+D       magi_attention/csrc/flexible_flash_attention/seqlen.h
+D       magi_attention/csrc/flexible_flash_attention/sink_layout.cuh
+D       magi_attention/csrc/flexible_flash_attention/sm90_pipeline_no_cluster.hpp
+D       magi_attention/csrc/flexible_flash_attention/softmax.h
+D       magi_attention/csrc/flexible_flash_attention/static_switch.h
+D       magi_attention/csrc/flexible_flash_attention/tile_size.h
+D       magi_attention/csrc/flexible_flash_attention/utils.h
+D       magi_attention/csrc/utils/bindings.cpp
+D       magi_attention/csrc/utils/preprocess_sparse_load.cu
+D       magi_attention/csrc/utils/profile_utils.cu
+D       magi_attention/csrc/utils/profile_utils.h
+D       magi_attention/csrc/utils/sort_and_reorder_ranges.cu
+D       magi_attention/csrc/utils/unique_consecutive_pairs.cu
+D       magi_attention/dist_attn_runtime_mgr.py
+D       magi_attention/functional/__init__.py
+D       magi_attention/functional/_flex_flash_attn_jit.py
+D       magi_attention/functional/dispatch.py
+D       magi_attention/functional/dist_attn.py
+D       magi_attention/functional/fa4.py
+D       magi_attention/functional/fa4_utils.py
+D       magi_attention/functional/flash-attention
+D       magi_attention/functional/flex_flash_attn.py
+D       magi_attention/functional/sdpa.py
+D       magi_attention/functional/utils.py
+D       magi_attention/magi_attn_ext.pyi
+D       magi_attention/meta/__init__.py
+D       magi_attention/meta/_make_attn_meta.py
+D       magi_attention/meta/_make_dispatch_meta.py
+D       magi_attention/meta/algorithms/__init__.py
+D       magi_attention/meta/algorithms/base.py
+D       magi_attention/meta/algorithms/binary_greedy.py
+D       magi_attention/meta/algorithms/binary_greedy_parallel.py
+D       magi_attention/meta/algorithms/fast_snf.py
+D       magi_attention/meta/algorithms/grg.py
+D       magi_attention/meta/algorithms/ncq.py
+D       magi_attention/meta/algorithms/snf.py
+D       magi_attention/meta/collection/__init__.py
+D       magi_attention/meta/collection/calc_meta.py
+D       magi_attention/meta/collection/comm_meta.py
+D       magi_attention/meta/collection/dispatch_meta.py
+D       magi_attention/meta/container/__init__.py
+D       magi_attention/meta/container/bucket.py
+D       magi_attention/meta/container/chunk.py
+D       magi_attention/meta/container/rank_entry.py
+D       magi_attention/meta/container/slice.py
+D       magi_attention/meta/container/transfer_table.py
+D       magi_attention/meta/solver/__init__.py
+D       magi_attention/meta/solver/dispatch_solver.py
+D       magi_attention/meta/solver/dist_attn_solver.py
+D       magi_attention/meta/solver/dynamic_attn_solver.py
+D       magi_attention/meta/solver/dynamic_solver_vis.py
+D       magi_attention/meta/solver/overlap_solver.py
+D       magi_attention/meta/solver/slice_maker.py
+D       magi_attention/testing/__init__.py
+D       magi_attention/testing/dist_common.py
+D       magi_attention/testing/flag_generator.py
+D       magi_attention/testing/gt_dispatcher.py
+D       magi_attention/testing/precision.py
+D       magi_attention/testing/ref_attn.py
+D       magi_attention/testing/utils.py
+D       magi_attention/utils/__init__.py
+D       magi_attention/utils/_utils.py
+D       magi_attention/utils/debug.py
+D       magi_attention/utils/metaclass.py
+D       magi_attention/utils/nvtx.py
+D       magi_attention/utils/sparse_utils.py
+D       makefile
+D       mypy.ini
+D       pyproject.toml
+D       requirements.txt
+D       requirements_dev.txt
+D       scripts/enable_ibgda_on_host.sh
+D       scripts/install_clang_format.sh
+D       scripts/install_flash_attn_cute.sh
+D       scripts/install_magiattn_on_blackwell.sh
+D       scripts/install_nvshmem_roce.sh
+D       scripts/run_csrc_code_formatter.sh
+D       setup.py
+D       tests/__init__.py
+D       tests/test_api/__init__.py
+D       tests/test_api/test_functools.py
+D       tests/test_api/test_interface.py
+D       tests/test_attn/__init__.py
+D       tests/test_attn/test_block_sparse_attn.py
+D       tests/test_attn/test_dist_attn.py
+D       tests/test_attn/test_flex_flash_attn.py
+D       tests/test_attn/test_merge_range.py
+D       tests/test_attn/test_ref_attn.py
+D       tests/test_attn_solver/__init__.py
+D       tests/test_attn_solver/test_dist_attn_solver.py
+D       tests/test_attn_solver/test_dynamic_attn_solver.py
+D       tests/test_comm/__init__.py
+D       tests/test_comm/test_all_gather_v.py
+D       tests/test_comm/test_group_collective.py
+D       tests/test_comm/test_group_collective_utils.py
+D       tests/test_comm/test_scatter_v.py
+D       tests/test_common/__init__.py
+D       tests/test_common/test_attn_mask.py
+D       tests/test_common/test_attn_range.py
+D       tests/test_common/test_attn_ranges.py
+D       tests/test_common/test_range_op/__init__.py
+D       tests/test_common/test_range_op/test_range_fill.py
+D       tests/test_common/test_range_op/test_range_gather.py
+D       tests/test_common/test_range_op/test_range_op_utils.py
+D       tests/test_common/test_range_op/test_range_reduce.py
+D       tests/test_common/test_rectangle.py
+D       tests/test_common/test_rectangles.py
+D       tests/test_dispatch/__init__.py
+D       tests/test_dispatch/test_calc_self_attn_areas.py
+D       tests/test_dispatch/test_dispatch_solver.py
+D       tests/test_dispatch/test_dispatcher.py
+D       tests/test_dispatch/test_gt_dispatcher.py
+D       tests/test_dist_runtime_mgr/__init__.py
+D       tests/test_dist_runtime_mgr/test_dist_runtime_mgr.py
+D       tests/test_functional/__init__.py
+D       tests/test_pipeline.py
+D       tests/test_pipeline_sdpa.py
+D       tests/test_utils/__init__.py
+D       tests/test_utils/test_common_utils.py
+D       tests/test_utils/test_flag_generator.py
+D       tools/__init__.py
+D       tools/build_helper.py
+D       tools/codestyle/check_for_chinese.py
+D       tools/codestyle/copyright.py
+D       tools/precompile_ffa_fa4.py
+D       tools/ptxas_analyzer.py
+rm 'assets/magi_attn/comm/group_gather_reduce_all2allv.png'
+rm 'assets/magi_attn/comm/ring_p2p_redundancy.png'
+rm 'assets/magi_attn/comp/min_hp_alg.png'
+rm 'assets/magi_attn/comp/ring_attn_load_balance.png'
+rm 'assets/magi_attn/exp/distributed/b200/causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/b200/causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/b200/full_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/b200/full_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/b200/varlen_causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/b200/varlen_causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/b200/varlen_full_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/b200/varlen_full_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/h100/causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/h100/causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/h100/full_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/h100/full_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/h100/varlen_causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/h100/varlen_causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/h100/varlen_full_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/distributed/h100/varlen_full_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/full_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/full_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/sw_causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/sw_causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/varlen_block_causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/varlen_block_causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/varlen_causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/varlen_causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/varlen_full_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/b200/varlen_full_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/full_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/full_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/sw_causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/sw_causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/varlen_block_causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/varlen_block_causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/varlen_causal_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/varlen_causal_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/varlen_full_mask/bwd/flops_report.png'
+rm 'assets/magi_attn/exp/kernel/h100/varlen_full_mask/fwd/flops_report.png'
+rm 'assets/magi_attn/exp/varlen_seqlen_distribution.png'
+rm 'assets/magi_attn/ffa/attn_slice_mask_type_sq<sk.png'
+rm 'assets/magi_attn/ffa/attn_slice_mask_type_sq=sk.png'
+rm 'assets/magi_attn/ffa/attn_slice_mask_type_sq>sk.png'
+rm 'assets/magi_attn/ffa/attnslice_interpret.png'
+rm 'assets/magi_attn/ffa/ffa_slice_atomic_reduce.png'
+rm 'assets/magi_attn/ffa/hstu_func_vs_attn_slice.png'
+rm 'assets/magi_attn/ffa/mask_with_attn_slice.png'
+rm 'assets/magi_attn/ffa/muon_qk_clip_max_logits.png'
+rm 'assets/magi_attn/ffa/sw_mask_with_slice.png'
+rm 'assets/magi_attn/mso/dynamic_mso_alg.png'
+rm 'assets/magi_attn/mso/multi_stage_overlap_fwd_bwd.png'
+rm 'assets/magi_attn/overview/magiattn_overview_v1.0.0.png'
+rm 'assets/magi_attn/overview/magiattn_overview_v1.1.0.png'
+rm 'assets/sandai_logos/logo-black.png'
+rm 'assets/sandai_logos/logo-gold.png'
+rm 'assets/sandai_logos/logo-white.png'
+Updated 403 paths from the index
+Submodule 'magi_attention/csrc/cutlass' (https://github.com/NVIDIA/cutlass.git) registered for path 'magi_attention/csrc/cutlass'
+Submodule 'magi_attention/functional/flash-attention' (https://github.com/demonatic/flash-attention.git) registered for path 'magi_attention/functional/flash-attention'
+Cloning into 'C:/pinokio/api/daVinci-MagiHuman/app/MagiAttention/magi_attention/csrc/cutlass'...
+Cloning into 'C:/pinokio/api/daVinci-MagiHuman/app/MagiAttention/magi_attention/functional/flash-attention'...
+Submodule path 'magi_attention/csrc/cutlass': checked out '81a43e6d92cdd8c20d22392f9579604ed5f710a1'
+Submodule path 'magi_attention/functional/flash-attention': checked out '9bf76bac55880e02e894459384edfb58db4e1cba'
+Submodule 'csrc/composable_kernel' (https://github.com/ROCm/composable_kernel.git) registered for path 'magi_attention/functional/flash-attention/csrc/composable_kernel'
+Submodule 'csrc/cutlass' (https://github.com/NVIDIA/cutlass.git) registered for path 'magi_attention/functional/flash-attention/csrc/cutlass'
+Cloning into 'C:/pinokio/api/daVinci-MagiHuman/app/MagiAttention/magi_attention/functional/flash-attention/csrc/composable_kernel'...
+Cloning into 'C:/pinokio/api/daVinci-MagiHuman/app/MagiAttention/magi_attention/functional/flash-attention/csrc/cutlass'...
+Submodule path 'magi_attention/functional/flash-attention/csrc/composable_kernel': checked out 'e8709c24f403173ad21a2da907d1347957e324fb'
+Submodule path 'magi_attention/functional/flash-attention/csrc/cutlass': checked out 'b1d6e2c9b334dfa811e4183dfbd02419249e4b52'
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

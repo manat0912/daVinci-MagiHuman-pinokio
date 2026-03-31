@@ -1,0 +1,42 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && python launcher.py     
+=== daVinci-MagiHuman Cross-Platform Launcher ===
+Running command: C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\python.exe app\inference\pipeline\entry.py --config-load-path app\example\base\config.json --prompt "A man with dark hair and glasses, wearing a green button-up shirt and black gloves, stands behind a counter with a pan, gesturing with his left hand, while a blonde woman with her hair in a bun, dressed in a white shirt, holds a microphone to her mouth, looking intently at the pan. The scene is set outdoors under a bright, overcast sky, with decorative palm tree cutouts and a light green vintage Volkswagen bus visible in the background, suggesting a relaxed, possibly tropical, cooking demonstration. The overall emotional disposition is one of focused engagement and professional presentation. The camera maintains a static medium shot, capturing both individuals from the waist up, with a shallow depth of field that keeps them sharp while blurring the background elements. The lighting is bright and even, typical of outdoor daylight, with soft shadows. The color grading is natural and vibrant, reflecting the outdoor setting. The man, with a slight smile, explains in a clear, steady, and informative tone, ""Pulver mit dran gemacht, gibt's ja auch als Paste, aber als Pulver ist das hier ein bisschen..."" as he gestures towards the pan with his left hand, his right hand resting on the counter. The woman listens attentively, her eyebrows slightly raised, her mouth slightly open in an expression of curiosity and concentration, her gaze fixed on the pan.
+
+Dialogue:
+<Man in green shirt, German>: ""Pulver mit dran gemacht, gibt's ja auch als Paste, aber als Pulver ist das hier ein bisschen...""
+
+Background Sound:
+<No prominent background sound effects>" --image_path app\example\assets\image.png --seconds 4 --br_width 448 --br_height 256 --output_path output_example_base --engine_config.distributed_backend gloo
+=================================================
+Traceback (most recent call last):
+  File "C:\pinokio\api\daVinci-MagiHuman\app\inference\pipeline\entry.py", line 20, in <module>
+    from inference.model.dit import get_dit
+  File "C:\pinokio\api\daVinci-MagiHuman\app\inference\model\dit\__init__.py", line 15, in <module>
+    from .dit_model import get_dit
+  File "C:\pinokio\api\daVinci-MagiHuman\app\inference\model\dit\dit_model.py", line 22, in <module>
+    from .dit_module import DiTModel
+  File "C:\pinokio\api\daVinci-MagiHuman\app\inference\model\dit\dit_module.py", line 25, in <module>
+    from magi_compiler import magi_compile
+  File "C:\pinokio\api\daVinci-MagiHuman\app\MagiCompiler\magi_compiler\__init__.py", line 15, in <module>
+    from .api import magi_compile, magi_register_custom_op
+  File "C:\pinokio\api\daVinci-MagiHuman\app\MagiCompiler\magi_compiler\api.py", line 21, in <module>
+    from ._api import (
+  File "C:\pinokio\api\daVinci-MagiHuman\app\MagiCompiler\magi_compiler\_api.py", line 31, in <module>
+    from magi_compiler.magi_backend.magi_compiler_base import MagiCompileState
+  File "C:\pinokio\api\daVinci-MagiHuman\app\MagiCompiler\magi_compiler\magi_backend\__init__.py", line 18, in <module>
+    from .magi_backend import MagiBackend, init_backend
+  File "C:\pinokio\api\daVinci-MagiHuman\app\MagiCompiler\magi_compiler\magi_backend\magi_backend.py", line 36, in <module>
+    from magi_compiler.passes import CustomJointGraphPartitionFn, FullGraphPassManager, PostGradPassManager, pass_context
+  File "C:\pinokio\api\daVinci-MagiHuman\app\MagiCompiler\magi_compiler\passes\__init__.py", line 16, in <module>
+    from .joint_graph import CustomJointGraphPartitionFn
+  File "C:\pinokio\api\daVinci-MagiHuman\app\MagiCompiler\magi_compiler\passes\joint_graph\__init__.py", line 16, in <module>
+    from .joint_graph_partition import CustomJointGraphPartitionFn
+  File "C:\pinokio\api\daVinci-MagiHuman\app\MagiCompiler\magi_compiler\passes\joint_graph\joint_graph_partition.py", line 24, in <module>
+    from torch._inductor.custom_graph_pass import CustomPartitionerFn
+ImportError: cannot import name 'CustomPartitionerFn' from 'torch._inductor.custom_graph_pass' (C:\pinokio\api\daVinci-MagiHuman\app\env\Lib\site-packages\torch\_inductor\custom_graph_pass.py)
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman>

@@ -1,0 +1,12 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && uv pip install triton-windows==3.3.1.post19
+Using Python 3.12.12 environment at: env
+Resolved 2 packages in 3ms
+Installed 2 packages in 77ms
+ + setuptools==82.0.1
+ + triton-windows==3.3.1.post19
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

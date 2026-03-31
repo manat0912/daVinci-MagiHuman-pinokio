@@ -1,0 +1,14 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && if exist MagiCompiler rmdir /s /q MagiCompiler & git clone https://github.com/SandAI-org/MagiCompiler.git
+Cloning into 'MagiCompiler'...
+remote: Enumerating objects: 227, done.
+remote: Counting objects: 100% (227/227), done.
+remote: Compressing objects: 100% (187/187), done.
+remote: Total 227 (delta 45), reused 211 (delta 37), pack-reused 0 (from 0)
+Receiving objects: 100% (227/227), 5.81 MiB | 4.66 MiB/s, done.
+Resolving deltas: 100% (45/45), done.
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

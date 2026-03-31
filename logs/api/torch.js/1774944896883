@@ -1,0 +1,11 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && uv pip install https://huggingface.co/cocktailpeanut/wheels/resolve/main/sageattention-2.2.0+cu130torch2.9.1-cp311-cp311-win_amd64.whl
+Using Python 3.12.12 environment at: env
+  x Failed to download `sageattention @ https://huggingface.co/cocktailpeanut/wheels/resolve/main/sageattention-2.2.0+cu130torch2.9.1-cp311-cp311-win_amd64.whl`                                                                                          
+  |-> Failed to fetch: `https://huggingface.co/cocktailpeanut/wheels/resolve/main/sageattention-2.2.0+cu130torch2.9.1-cp311-cp311-win_amd64.whl`
+  `-> HTTP status client error (404 Not Found) for url (https://huggingface.co/cocktailpeanut/wheels/resolve/main/sageattention-2.2.0+cu130torch2.9.1-cp311-cp311-win_amd64.whl)
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

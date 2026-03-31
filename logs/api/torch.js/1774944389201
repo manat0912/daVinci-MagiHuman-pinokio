@@ -1,0 +1,11 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && uv pip install torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0 numpy==1.26.4 xformers==0.0.30 --index-url https://download.pytorch.org/whl/cu128 --force-reinstall
+Using Python 3.12.12 environment at: env
+  x No solution found when resolving dependencies:
+  `-> Because xformers==0.0.30 depends on torch==2.7.0 and you require torch==2.10.0, we can conclude that your requirements and xformers==0.0.30 are incompatible.
+      And because you require xformers==0.0.30, we can conclude that your requirements are unsatisfiable.
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

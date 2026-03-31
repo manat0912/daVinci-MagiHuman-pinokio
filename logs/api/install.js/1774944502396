@@ -1,0 +1,10 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base && uv venv --python 3.12 --clear env
+Using CPython 3.12.12
+Creating virtual environment at: env
+Activate with: env\Scripts\activate
+
+(base) C:\pinokio\api\daVinci-MagiHuman\app>

@@ -1,0 +1,8 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && python app.py      
+C:\pinokio\bin\miniconda\python.exe: can't open file 'C:\\pinokio\\api\\daVinci-MagiHuman\\app\\app.py': [Errno 2] No such file or directory
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

@@ -1,0 +1,52 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && python launcher.py     
+=== daVinci-MagiHuman Cross-Platform Launcher ===
+Running command: C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\python.exe -m torch.distributed.run --nnodes=1 --node_rank=0 --nproc_per_node=1 --rdzv-backend=c10d --rdzv-endpoint=localhost:6009 app\inference\pipeline\entry.py --config-load-path app\example\base\config.json --prompt "A man with dark hair and glasses, wearing a green button-up shirt and black gloves, stands behind a counter with a pan, gesturing with his left hand, while a blonde woman with her hair in a bun, dressed in a white shirt, holds a microphone to her mouth, looking intently at the pan. The scene is set outdoors under a bright, overcast sky, with decorative palm tree cutouts and a light green vintage Volkswagen bus visible in the background, suggesting a relaxed, possibly tropical, cooking demonstration. The overall emotional disposition is one of focused engagement and professional presentation. The camera maintains a static medium shot, capturing both individuals from the waist up, with a shallow depth of field that keeps them sharp while blurring the background elements. The lighting is bright and even, typical of outdoor daylight, with soft shadows. The color grading is natural and vibrant, reflecting the outdoor setting. The man, with a slight smile, explains in a clear, steady, and informative tone, ""Pulver mit dran gemacht, gibt's ja auch als Paste, aber als Pulver ist das hier ein bisschen..."" as he gestures towards the pan with his left hand, his right hand resting on the counter. The woman listens attentively, her eyebrows slightly raised, her mouth slightly open in an expression of curiosity and concentration, her gaze fixed on the pan.
+
+Dialogue:
+<Man in green shirt, German>: ""Pulver mit dran gemacht, gibt's ja auch als Paste, aber als Pulver ist das hier ein bisschen...""
+
+Background Sound:
+<No prominent background sound effects>" --image_path app\example\assets\image.png --seconds 4 --br_width 448 --br_height 256 --output_path output_example_base --engine_config.distributed_backend gloo
+=================================================
+W0330 22:34:08.381000 34800 app\env\Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Traceback (most recent call last):
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\elastic\rendezvous\c10d_rendezvous_backend.py", line 159, in _create_tcp_store
+    store = TCPStore(
+torch.distributed.DistStoreError: use_libuv was requested but PyTorch was built without libuv support, run with USE_LIBUV=0 to disable it.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\pinokio\bin\miniconda\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\pinokio\bin\miniconda\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\run.py", line 896, in <module>
+    main()
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\run.py", line 892, in main
+    run(args)
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\run.py", line 883, in run
+    elastic_launch(
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\launcher\api.py", line 139, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\launcher\api.py", line 242, in launch_agent
+    rdzv_handler=rdzv_registry.get_rendezvous_handler(rdzv_parameters),
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\elastic\rendezvous\registry.py", line 100, in get_rendezvous_handler
+    return handler_registry.create_handler(params)
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\elastic\rendezvous\api.py", line 376, in create_handler
+    handler = creator(params)
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\elastic\rendezvous\registry.py", line 51, in _create_c10d_handler
+    backend, store = create_backend(params)
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\elastic\rendezvous\c10d_rendezvous_backend.py", line 257, in create_backend
+    store = _create_tcp_store(params)
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\lib\site-packages\torch\distributed\elastic\rendezvous\c10d_rendezvous_backend.py", line 183, in _create_tcp_store
+    raise RendezvousConnectionError(
+torch.distributed.elastic.rendezvous.api.RendezvousConnectionError: The connection to the C10d store has failed. See inner exception for details.
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman>

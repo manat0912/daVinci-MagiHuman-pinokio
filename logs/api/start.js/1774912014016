@@ -1,0 +1,40 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && python launcher.py     
+=== daVinci-MagiHuman Cross-Platform Launcher ===
+Running command: C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\python.exe app\inference\pipeline\entry.py --config-load-path app\example\base\config.json --prompt "A man with dark hair and glasses, wearing a green button-up shirt and black gloves, stands behind a counter with a pan, gesturing with his left hand, while a blonde woman with her hair in a bun, dressed in a white shirt, holds a microphone to her mouth, looking intently at the pan. The scene is set outdoors under a bright, overcast sky, with decorative palm tree cutouts and a light green vintage Volkswagen bus visible in the background, suggesting a relaxed, possibly tropical, cooking demonstration. The overall emotional disposition is one of focused engagement and professional presentation. The camera maintains a static medium shot, capturing both individuals from the waist up, with a shallow depth of field that keeps them sharp while blurring the background elements. The lighting is bright and even, typical of outdoor daylight, with soft shadows. The color grading is natural and vibrant, reflecting the outdoor setting. The man, with a slight smile, explains in a clear, steady, and informative tone, ""Pulver mit dran gemacht, gibt's ja auch als Paste, aber als Pulver ist das hier ein bisschen..."" as he gestures towards the pan with his left hand, his right hand resting on the counter. The woman listens attentively, her eyebrows slightly raised, her mouth slightly open in an expression of curiosity and concentration, her gaze fixed on the pan.
+
+Dialogue:
+<Man in green shirt, German>: ""Pulver mit dran gemacht, gibt's ja auch als Paste, aber als Pulver ist das hier ein bisschen...""
+
+Background Sound:
+<No prominent background sound effects>" --image_path app\example\assets\image.png --seconds 4 --br_width 448 --br_height 256 --output_path output_example_base --engine_config.distributed_backend gloo
+=================================================
+Skipping import of cpp extensions due to incompatible torch version. Please upgrade to torch >= 2.11.0 (found 2.10.0+cu128).
+W0331 12:41:39.496000 15408 env\Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+[2026-03-31 12:41:41,429 - INFO] [Rank 0] > initializing torch distributed ...
+Traceback (most recent call last):
+  File "C:\pinokio\api\daVinci-MagiHuman\app\inference\pipeline\entry.py", line 95, in <module>
+    initialize_infra()
+  File "C:\pinokio\api\daVinci-MagiHuman\app\inference\infra\__init__.py", line 26, in initialize_infra
+    initialize_distributed()
+  File "C:\pinokio\api\daVinci-MagiHuman\app\inference\infra\distributed\init_dist_env.py", line 44, in initialize_distributed
+    torch.distributed.init_process_group(
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\Lib\site-packages\torch\distributed\c10d_logger.py", line 83, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\Lib\site-packages\torch\distributed\c10d_logger.py", line 97, in wrapper
+    func_return = func(*args, **kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\Lib\site-packages\torch\distributed\distributed_c10d.py", line 1813, in init_process_group
+    default_pg, _ = _new_process_group_helper(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\pinokio\api\daVinci-MagiHuman\app\env\Lib\site-packages\torch\distributed\distributed_c10d.py", line 2043, in _new_process_group_helper
+    backend_class = ProcessGroupGloo(
+                    ^^^^^^^^^^^^^^^^^
+RuntimeError: makeDeviceForHostname(): unsupported gloo device
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman>

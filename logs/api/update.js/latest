@@ -1,0 +1,20 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base && git clone --recursive https://github.com/SandAI-org/MagiAttention.git
+Cloning into 'MagiAttention'...
+remote: Enumerating objects: 12804, done.
+remote: Counting objects: 100% (3027/3027), done.
+remote: Compressing objects: 100% (1176/1176), done.
+remote: Total 12804 (delta 2388), reused 1927 (delta 1848), pack-reused 9777 (from 1)
+Receiving objects: 100% (12804/12804), 160.51 MiB | 9.99 MiB/s, done.
+Resolving deltas: 100% (8080/8080), done.
+error: invalid path 'assets/magi_attn/ffa/attn_slice_mask_type_sq<sk.png'
+fatal: unable to checkout working tree
+warning: Clone succeeded, but checkout failed.
+You can inspect what was checked out with 'git status'
+and retry with 'git restore --source=HEAD :/'
+
+
+(base) C:\pinokio\api\daVinci-MagiHuman\app>

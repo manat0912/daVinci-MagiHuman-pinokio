@@ -1,0 +1,15 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && uv pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 xformers==0.0.30 --index-url https://download.pytorch.org/whl/cu128 --force-reinstall --no-deps
+Using Python 3.10.15 environment at: env
+Resolved 4 packages in 1.64s
+Prepared 4 packages in 6ms
+Installed 4 packages in 8.27s
+ + torch==2.7.0+cu128
+ + torchaudio==2.7.0+cu128
+ + torchvision==0.22.0+cu128
+ + xformers==0.0.30
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

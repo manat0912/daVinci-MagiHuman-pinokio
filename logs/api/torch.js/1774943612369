@@ -1,0 +1,11 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && uv pip install https://huggingface.co/cocktailpeanut/wheels/resolve/main/sageattention-2.1.1%2Bcu128torch2.7.1-cp310-cp310-win_amd64.whl
+Using Python 3.12.12 environment at: env
+  x No solution found when resolving dependencies:
+  `-> Because only sageattention==2.1.1+cu128torch2.7.1 is available and sageattention==2.1.1+cu128torch2.7.1 has no wheels with a matching Python version tag (e.g., `cp312`), we can conclude that all versions of sageattention cannot be used.
+      And because you require sageattention, we can conclude that your requirements are unsatisfiable.
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>

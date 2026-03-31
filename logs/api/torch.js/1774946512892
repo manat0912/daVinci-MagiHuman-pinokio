@@ -1,0 +1,35 @@
+[api shell.run]
+Microsoft Windows [Version 10.0.26200.8039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\pinokio\api\daVinci-MagiHuman\app>conda_hook & conda deactivate & conda deactivate & conda deactivate & conda activate base & C:\pinokio\api\daVinci-MagiHuman\app\env\Scripts\activate C:\pinokio\api\daVinci-MagiHuman\app\env && uv pip install xformers==0.0.26.post1
+Using Python 3.12.12 environment at: env
+Resolved 14 packages in 804ms
+  x Failed to build `xformers==0.0.26.post1`
+  |-> The build backend returned an error                                                                                                                                                                                                                 
+  `-> Call to `setuptools.build_meta:__legacy__.build_wheel` failed (exit code: 1)
+
+      [stderr]
+      Traceback (most recent call last):
+        File "<string>", line 14, in <module>
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp1TMe08\Lib\site-packages\setuptools\build_meta.py", line 333, in get_requires_for_build_wheel
+return self._get_build_requires(config_settings, requirements=[])
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp1TMe08\Lib\site-packages\setuptools\build_meta.py", line 301, in _get_build_requires
+self.run_setup()
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp1TMe08\Lib\site-packages\setuptools\build_meta.py", line 520, in run_setup
+super().run_setup(setup_script=setup_script)
+        File "C:\pinokio\cache\UV_CACHE_DIR\builds-v0\.tmp1TMe08\Lib\site-packages\setuptools\build_meta.py", line 317, in run_setup
+exec(code, locals())
+        File "<string>", line 23, in <module>
+      ModuleNotFoundError: No module named 'torch'
+
+      hint: This error likely indicates that `xformers@0.0.26.post1` depends on `torch`, but doesn't declare it as a build dependency. If `xformers` is a first-party package, consider adding `torch` to its `build-system.requires`. Otherwise, either
+      add it to your `pyproject.toml` under:
+
+      [tool.uv.extra-build-dependencies]
+      xformers = ["torch"]
+
+      or `uv pip install torch` into the environment and re-run with `--no-build-isolation`.
+
+(env) (base) C:\pinokio\api\daVinci-MagiHuman\app>
